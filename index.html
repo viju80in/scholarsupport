@@ -284,11 +284,21 @@
 <!-- UPDATE 1: Add the action URL and POST method to the form tag -->
 <form action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="61673ce9-4d7f-457e-844d-5895263870a8">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit Form</button>
-</form>
+   <input type="text" name="name" placeholder="Your Name" required />
+    
+    <!-- UPDATE 3: Add name="email" -->
+    <input type="email" name="email" placeholder="Email Address" required />
+    
+    <!-- UPDATE 4: Add name="requirement_type" -->
+    <input type="text" name="requirement_type" placeholder="Academic Requirement" required />
+
+    <!-- UPDATE 5: Add name="description" -->
+    <textarea rows="5" name="description" placeholder="Describe your requirement"></textarea>
+
+    <button type="submit" class="btn-primary">
+        Send Inquiry
+    </button>
+</form>    
 
 
         </div>
